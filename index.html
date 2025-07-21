@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trúc xanh</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "main">
+            <div class = "head">
+            T R Ú C X A N H
+            </div>
+
+        <div class = "body">
+            <button id = "level" onclick="on_level_menu()">LEVEL</button>
+                    <div id = "level_menu">
+                    <button id = "bt1" class = "bt">LEVEL 1</button>
+                    <button id = "bt2" class = "bt">LEVEL 2</button>
+                    <button id = "bt3" class = "bt">LEVEL 3</button>
+                    <button id = "bt4" class = "bt">LEVEL 4</button>
+                    <button id = "bt5" class = "bt">LEVEL 5</button>
+                    <button id = "bt6" class = "bt">LEVEL 6</button>
+                    <button id = "bt7" class = "bt">LEVEL 7 </button>
+                    <button id = "bt8" class = "bt">LEVEL 8</button>
+                    <button id = "bt9" class = "bt">LEVEL 9</button>
+                    <button id = "bt10" class = "bt">LEVEL 10</button>
+                    <button id = "exit" onclick="of_level_menu()" >Thoát</button>
+                    </div>
+            <button id = "custome" onclick="on_custome_menu()">CUSTOME</button>
+                        <div id = "custome_menu">
+                            <div class = "select_group">
+                            <label for="">Số lượng hình ảnh: </label><br>
+                            <input type="number" id="image" min="1">
+                            </div>
+
+                            <div class = "select_group">
+                            <label for="">Số hình theo chiều dọc: </label><br>
+                            <input type="number" id="image_doc"min = "1">
+                            </div>
+
+                            <div class= "select_group">
+                            <label for="">Số hình theo chiều ngang: </label><br>
+                            <input type="number" id = "image_ngang" min = "1">
+                            </div>
+
+                            <div class = "select_group">
+                                <label>Màu nền ô:</label>
+                                <input type="color" class = "choose_color">
+
+                                <label>Màu viền ô:</label>
+                                <input type="color" class = "choose_color" >
+                            </div>
+
+                            <button class ="custome_button" onclick="of_custome_menu()">Thoát</button>
+                            
+
+                            <button class ="custome_button" type="submit">Bắt đầu chơi</button>
+
+                        </div>
+        </div>
+
+        <div class = "rank">
+                    <table id = "table_rank">
+            <tr id = "name">
+                <td id = "main_name">Tên</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+                <td>tú</td>
+
+            </tr>
+
+            <tr id = "point">
+                <td id = "main_point">Điểm</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9</td>
+                <td>10</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+
+            <tr id = "thu_tu">
+                <td id = "main_thu_tu">Xếp hạng</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+
+            </tr>
+
+            </table>
+        </div>  
+    </div>
+
+        <script src="game.js"></script>
+    </body>
+    </html>
