@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main_game_style.css">
+  
+</head>
+<body>
+  <div id = "main">
+
+  
+      <div id = "left">
+          
+
+      </div>
+      <!--=======================================-->
+      <div id = "right">
+
+        <div id="khung"></div>
+
+
+      </div>
+
+  </div>
+  
+
+
+<script src="main_game.js"></script>
+<script>
+  let soHang = parseInt(localStorage.getItem("soHang"));
+  let soCot = parseInt(localStorage.getItem("soCot"));
+  let mauNen = localStorage.getItem("mauNen");
+  let mauVien = localStorage.getItem("mauVien");
+  let time = parseInt(localStorage.getItem("time"));
+
+  taoDiv(soHang, soCot, mauNen, mauVien);
+
+    localStorage.removeItem("soHang");
+    localStorage.removeItem("soCot");
+    localStorage.removeItem("mauNen");
+    localStorage.removeItem("mauVien");
+   
+</script>
+
+
+</body>
+</html>
